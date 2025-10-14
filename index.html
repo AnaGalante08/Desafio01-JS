@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador</title>
+    <style>body { text-align: center; padding-top: 50px; font-family: sans-serif; } h2 { font-size: 4rem; } button { font-size: 2rem; width: 50px; }</style>
+</head>
+<body>
+    <h2 id="numero">0</h2>
+    <button id="btn-diminuir">-</button>
+    <button id="btn-aumentar">+</button>
+
+    <script>
+        const numeroElement = document.getElementById("numero");
+const btnDiminuir = document.getElementById("btn-diminuir");
+const btnAumentar = document.getElementById("btn-aumentar");
+
+let contador = 0; 
+
+btnDiminuir.addEventListener("click", function() {
+    contador--;
+    numeroElement.textContent = contador;
+});
+
+btnAumentar.addEventListener("click", function() {
+    contador++;
+    numeroElement.textContent = contador;
+});
+
+
+numeroElement.textContent = contador;
+
+    </script>
+</body>
+</html>
+
+
+
