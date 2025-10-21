@@ -3,6 +3,7 @@
 <head>
     <title>Contador</title>
     <style>body { text-align: center; padding-top: 50px; font-family: sans-serif; } h2 { font-size: 4rem; } button { font-size: 2rem; width: 50px; }</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2 id="numero">0</h2>
@@ -10,6 +11,7 @@
     <button id="btn-aumentar">+</button>
 
     <script>
+        //Definir as constantes
         const numeroElement = document.getElementById("numero");
 const btnDiminuir = document.getElementById("btn-diminuir");
 const btnAumentar = document.getElementById("btn-aumentar");
@@ -17,7 +19,7 @@ const btnAumentar = document.getElementById("btn-aumentar");
 let contador = 0; 
 
 btnDiminuir.addEventListener("click", function() {
-    contador--;
+    contador = contador - 1;
     numeroElement.textContent = contador;
 });
 
